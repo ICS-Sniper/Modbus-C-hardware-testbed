@@ -216,3 +216,44 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Project-specific credential exclusions
+# Credentials and generated VPN profiles
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.ovpn
+client.conf
+openvpn-ca/
+client-configs-*/
+*openvpn*ca*.zip
+*credential*.zip
+*secret*.zip
+.env
+.env.*
+!.env.example
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+# Runtime output
+logs/
+scadalogs/
+traces/
+*.pcap
+*.pcapng
+*.log
+# Connected Components Workbench local state
+*.backup
+*.user
+*.suo
+# Editors and operating systems
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
