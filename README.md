@@ -1,5 +1,7 @@
 # ICS-Sniper Modbus-C Hardware Testbed
 
+**SWaT hardware testbed (Connected Modbus version)**
+
 This repository contains the hardware Modbus/TCP testbed used by ICS-Sniper. Six Allen-Bradley Micro820 PLCs connect through a Windows VPN gateway to a cloud SCADA host.
 
 Replace every value in angle brackets, such as `<router-public-ip>`, with a value from your environment. Generate new VPN credentials for every deployment.
@@ -328,6 +330,7 @@ sudo ss -ltnp | grep 1194
 ssh -i <ssh-key> ubuntu@<scada-host>
 cd ~/openvpn-ca
 sudo openvpn --config client.conf --daemon
+sudo sysctl -w net.ipv4.ip_forward=1
 ping -c 3 10.8.0.1
 ping -c 3 10.8.0.2
 cd /home/ubuntu/Modbus-C-hardware-testbed
