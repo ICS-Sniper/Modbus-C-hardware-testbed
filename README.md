@@ -1,5 +1,7 @@
 # ICS-Sniper Modbus-C Hardware Testbed
 
+Archived as part of the ICS-Sniper artifact: https://doi.org/10.5281/zenodo.23737012
+
 **SWaT hardware testbed (Connected Modbus version)**
 
 This repository contains the hardware Modbus/TCP testbed used by ICS-Sniper. Six Allen-Bradley Micro820 PLCs connect through a Windows VPN gateway to a cloud SCADA host.
